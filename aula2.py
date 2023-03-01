@@ -3,15 +3,22 @@
 # alem do valor informar a condição do individo
 
 
-peso = 63.50
+peso = 80.02
 print ('meu peso e de', peso)
 
 altura = 1.65
 print ('minha altura e de', altura)
 
 imc = peso / (altura **2)
-print('o imc e de {}'.format(imc))
+print('o imc e de {:.1f}'.format(imc))
 
-if 18.4 <= imc >23:
-    print ('acima do peso')
-    
+if imc < 18.4:
+    print('voce esta abaixo do peso') 
+elif 18.4 <= imc < 23:
+    print('voce esta no peso ideal')   
+elif 23 <= imc < 30:
+    print('voce esta acima do peso')
+elif 30 <= imc < 40:
+    print('voce esta em obesidade')
+elif imc >= 40:
+    print('voce esta super obeso cuidado!')
