@@ -3,11 +3,9 @@
 # alem do valor informar a condição do individo
 
 
-peso = 80.02
-print ('meu peso e de', peso)
+peso = float(input('qual e seu peso (Kg)'))
 
-altura = 1.65
-print ('minha altura e de', altura)
+altura = float (input('qual e a sua altura (m)'))
 
 imc = peso / (altura **2)
 print('o imc e de {:.1f}'.format(imc))
