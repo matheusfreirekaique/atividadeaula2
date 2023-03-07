@@ -2,10 +2,11 @@
 # usar variaveis, guardar o resulatado e imprimir esse valor
 # alem do valor informar a condição do individo
 
+peso_str = input('qual e seu peso (Kg)')
+peso = float (peso_str)
 
-peso = float(input('qual e seu peso (Kg)'))
-
-altura = float (input('qual e a sua altura (m)'))
+altura_str = input('qual e a sua altura (m)')
+altura = float (altura_str)
 
 imc = peso / (altura **2)
 print('o imc e de {:.1f}'.format(imc))
