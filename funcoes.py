@@ -1,20 +1,45 @@
 def imc():
-    pesoimc  = input ('informe seu peso')
-    peso = float (pesoimc)
-    alturaimc = input ('informe sua altura')
-    altura = float (alturaimc)
-    imc = pesoimc / (alturaimc**2)
-    print('o imc é de {:.1f}'.format(imc))
-    
-    
-if imc < 18.8:
-    print('voce esta abaixo do peso')
-elif 18.8 <= imc < 25:
-    print('voce esta no peso ideal')
-elif 23 <= imc < 45:
-    print ('vc esta acima do peso')
-elif 30 <= imc < 60:
-    print('voce esta em obesidade')
-elif imc >= 65:
-    print('voce esta super obeso cuidado!')
-    
+      
+  peso = input('qual é seu peso:' )
+  peso_srt= float(peso)
+  altura = input('qual é a sua altura')
+  altura_srt= float(altura)
+  
+  
+  imc = peso_srt / (altura_srt** 2)
+  print('O imc é de:{:.1f}'.format(imc))
+   
+  if imc < 18.8:
+        print('você esta abaixo do peso')
+  elif imc >= 18.8 < 25:
+        print('você esta no peso ideal')
+  elif imc >= 25 < 45:
+        print ('você esta acima do peso')
+  elif imc >= 45 < 65:
+        print ('você esta em obesidade')
+  elif imc >= 65:
+        print ('você esta super obeso cuidado')
+         
+
+
+imc()
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
