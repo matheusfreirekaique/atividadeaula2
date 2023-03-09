@@ -1,13 +1,6 @@
-def imc():
-      
-  peso = input('qual é seu peso:' )
-  peso_srt= float(peso)
-  altura = input('qual é a sua altura')
-  altura_srt= float(altura)
-  
-  
-  imc = peso_srt / (altura_srt** 2)
-  print('O imc é de:{:.1f}'.format(imc))
+def calc_imc(peso, altura):      
+  imc = peso / (altura * altura)
+  print('O imc é de: {:.1f}'.format(imc))
    
   if imc < 18.8:
         print('você esta abaixo do peso')
@@ -22,7 +15,16 @@ def imc():
          
 
 
-imc()
+
+peso_str = input('qual é seu peso: ')
+peso = float(peso_str)
+altura_str = input('qual é a sua altura: ')
+altura = float(altura_str)
+calc_imc(peso, altura)
+
+
+
+
   
   
 
