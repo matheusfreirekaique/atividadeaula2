@@ -36,9 +36,13 @@ def calc_imclist(peso_list, altura_list):
       
 
       
-     
+
+print('''[1] Entrar com peso e altura 
+      [2] processar lista de pessoas''')
+print(input('digite a opção:'))
+    
 opcao1 = calc_imc
-print(input('primeira opção'))
+print(input('digite a opção'))
 
 peso_str = input('qual é seu peso: ')
 peso = float(peso_str)
@@ -56,9 +60,8 @@ for pessoa in pessoas:
       altura_list = pessoa[0]
       calc_imclist(peso_list, altura_list)
  
-print('''[1] Entrar com peso e altura 
-      [2] processar lista de pessoas''')
-print('Qual sua opção?')
+
+
       
 
 
